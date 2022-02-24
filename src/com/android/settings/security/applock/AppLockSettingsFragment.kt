@@ -30,7 +30,7 @@ import com.android.settingslib.search.SearchIndexable
 import com.android.settings.security.applock.DashboardFragment
 
 @SearchIndexable
-class AppLockSettingsFragment : DashboardFragment() {
+class AppLockSettingsFragment : DashboardFragment(),
     MenuItem.OnMenuItemClickListener {
 
     private var debugEnabled = SystemProperties.get(DEBUG_PROPERTY, null) == LEVEL_DEBUG
